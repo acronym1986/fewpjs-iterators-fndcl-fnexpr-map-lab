@@ -26,11 +26,11 @@ const tutorials = [
  
 tutorials.map(titleCased);  */
 
-const titleCased = (sentence) => {
+const titleCased = () => {
   
-  return tutorials.map(word => {
-  const sepWord = word.split(' ');
-  const capLetter = sepWord.map(letter => letter.charAt(0).toUpperCase() + letter.slice(1)).join(' ');
+  return tutorials.map(sentence => {
+  const sepSentence = sentence.split(' ');
+  const capLetter = sepSentence.map(letter => letter.charAt(0).toUpperCase() + letter.slice(1)).join(' ');
    return capLetter;
    
 })                       
